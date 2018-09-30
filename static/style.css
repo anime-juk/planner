@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #edeef0;
+}
+
+.app{
+    position: absolute;
+    top:0;bottom:0;left:0;right:0;
+    margin:auto;
+    width: 1000px;
+    height: 800px;
+    background-color: white;
+    
+}
+.header{
+    background-color: black;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #edeef0;
+}
+
+.head {
+    position: absolute;
+    height: 40px;
+    text-align:center;
+    font-size:13px;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 3px 6px;
+    background: #fff;
+    width:150px;
+   
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.1));
+    border-radius: 3px;
+    color: rgba(0,0,0,.6);
+    text-shadow: 0 1px 1px rgba(255,255,255,.7);
+    box-shadow: 0 0 0 1px rgba(0,0,0,.2), 0 1px 2px rgba(0,0,0,.2), inset 0 1px 2px rgba(255,255,255,.7);
+}
+
+.head:hover{
+    background: #fff;
+}
+.head:active{
+    background: #d0d3d6;
+    background-image: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,0));
+    box-shadow: inset 0 0 2px rgba(0,0,0,.2), inset 0 2px 5px rgba(0,0,0,.2), 0 1px rgba(255,255,255,.2);
+}
+#file{
+    top:4px;
+    left:10px;
+}
+#move{
+    top:4px;
+    left:200px;
+}
+label{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.headtext{
+    display:block;
+    font-size:13px;
+    margin-left: 800px;
+    color:white;
+}
+.left{
+    position: absolute;
+    width: 200px;
+    height: 700px;
+    border: 2px #edeef0 solid;
+    border-top: 0px;
+}
+.main{
+    left:200px;
+    position: absolute;
+    width: 800px;
+    height: 700px;
+    border: 2px #edeef0 solid;
+    border-top: 0px;
+    border-left: 0px;
+}
+.footer{
+    position: absolute;
+    top:750px;
+    height: 50px;
+    width: 100%;
+    background-color: black
+}
+input[type="file"]{
+
+    display: none;/* скрываем input file */
+    
+    }
+.filename{
+    position: absolute;
+    top:5px;
+    left:700px;
+    color:white;
+}
+.el{
+    cursor: pointer
+}
+.el:hover{
+    background-color: #edeef0;
+}
