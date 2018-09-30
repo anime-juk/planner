@@ -1,4 +1,5 @@
 function getFile () {
+  clean();
     var file = document.getElementById ('fileInput').value;
     document.getElementsByClassName('filename')[0].innerHTML = 'Имя файла: ' + file;
 
@@ -37,4 +38,10 @@ function getFile () {
           el.innerHTML=messagesNode[i].getAttribute('name') + " " + messagesNode[i].getAttribute('comments');
           left.appendChild(el);
         }
+    }
+    function clean(){
+      for(var i=0; i < document.getElementsByClassName("left")[0].childNodes.length;){
+        document.getElementsByClassName("left")[0].childNodes[0].remove();
+        console.log(document.getElementsByClassName("left")[0].childNodes.length);
+      }
     }
