@@ -38,7 +38,7 @@ function getFile () {
       var left2 = document.getElementsByClassName("left2")[0];
       console.log(msg.getElementsByTagName('concept')[0].getElementsByTagName('PSTU')[0].getElementsByTagName('element')[0]);
       var sel=document.createElement('select');
-      sel.onclick=plan;
+      sel.onchange=plan;
       if(messagesNode)
         for(let i=0; i<messagesNode.length; i++){
           var el = document.createElement('div');
@@ -100,7 +100,7 @@ function getFile () {
         out.push(xml[mas[i]].getElementsByTagName('PRDU')[0].getElementsByTagName('element')[z].getAttribute('name'));
         console.log('out: '+out)
       }
-
+      if(!xml[mas[i]].getElementsByTagName('PRDU')[0].getElementsByTagName('element').length) alert('(ошибка!!!)');
        }
        console.log(out)
        if(out.length == 0) return;
